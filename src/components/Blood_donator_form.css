@@ -1,0 +1,316 @@
+.donatar_register_form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(22, 21, 21, 0.5); 
+}
+.Reg_form_container {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  .Reg_form_container header {
+    font-size: 3.5vh;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  .Reg_form_container .reg_form {
+    margin-top: 10px;
+  }
+  .reg_form .input-box {
+    width: 100%;
+    margin-top: 5px;
+    font-family: monospace;
+    font-weight: 700;
+  }
+  
+  .input-box label {
+    color: #000000;
+   
+    
+  }
+  .reg_form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-style: italic;
+    font-size: 2vh;
+    font-weight: 800;
+    border: 1px solid #ddd;
+    color: #000000;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 5vh;
+      width: 89%;
+      box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.3);
+      margin-left: 4%;
+  }
+  .input-box input:focus {
+   
+    border: 2px black solid;
+  }
+  .input-box input{
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.3);
+      margin-right: 5vh;
+      width: 90%;
+    
+      margin-left: 2%;
+  }
+  .defult_name{
+      margin-right: 5vh;
+      width: 94%;
+   
+    height: 40px;
+  
+    outline: none;
+    font-size: 4vh;
+    margin-left: 2%;
+    font-weight: bold;
+    font-family: monospace;
+    border: 1px solid #ddd;
+    color: #000000;
+    border-radius: 6px;
+    padding: 0 15px;
+
+      
+      box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.3);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+  }
+  #donatar_address{
+    width: 95%;
+  }
+  .response_reg{
+    display: none;
+  }
+  .defult_email h4{
+    margin-top: 2vh;
+    font-size: 2vh;
+  }
+  .defult_name h4{
+    margin-top: 1vh;
+  }
+  .gender label{
+    margin-top: 1vh;
+    
+  }
+  .defult_email{
+    margin-right: 5vh;
+
+      margin-left: 2%;
+      position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+ 
+    font-weight: bold;
+    font-family: monospace;
+    border: 1px solid #ddd;
+    color: #000000;
+    border-radius: 6px;
+
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 5vh;
+      width: 89%;
+      box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.3);
+      margin-left: 4%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+  }
+  .reg_form .column {
+    display: flex;
+    column-gap: 8px;
+  }
+ 
+  .gender-box h3 {
+    color: #333;
+    font-size: 3vh;
+    font-family: monospace;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .reg_form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    margin-left: 3vh;
+    column-gap: 50px;
+  
+    flex-wrap: wrap;
+  }
+  .reg_form .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .reg_form :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  .gender label {
+    color: #707070;
+    font-size: 2vh;
+
+  }
+  .address :where(input, .select-box) {
+    margin-top: 15px;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    font-size: 2vh;
+
+    outline: none;
+    border: none;
+   color: #000000;
+    
+  }
+  .reg_form button {
+    height: 40px;
+    width: 90%;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+
+margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgb(130, 106, 251);
+  }
+ 
+  .confirm_con{
+    height: 20%;
+top: 50%;
+left: 26%;
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .regster_and_close{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+  
+
+  }
+  .regster_and_close span{
+font-size: 3vh;
+  }
+  .regster_and_close p{
+    padding: 1px;
+  }
+  #display_non_con{
+    display: none;
+  }
+ 
+  /*Responsive*/
+  @media (max-width: 940px) {
+    .reg_form .column {
+      flex-wrap: wrap;
+    }
+    .response_reg{
+      display: block;
+    }
+    .response_window_form{
+      display: none;
+    }
+    .Reg_form_container{
+        top: 50%;
+        width: 80%;
+        height: 90%;
+        max-width: 500%;
+    }
+    .reg_form :where(.gender-option, .gender) {
+      display: flex;
+    align-items: center;
+    margin-left: 3vh;
+    column-gap: 30px;
+  
+    flex-wrap: wrap;
+    }
+     .reg_form .input-box {
+    width: 100%;
+    margin-top: 1px;
+    font-family: monospace;
+    font-weight: 700;
+  }
+ #display_non_con{
+display: block;
+ }
+ #display_non_con{
+    display:flex;
+    flex-direction: row;
+ }
+ #display_non_con h4{
+    font-size: 1.5vh;
+    letter-spacing: 0px;
+    
+ }
+ #display_non_1{
+    display: none;
+ }
+.defult_email{
+    height: 40px;
+}
+.defult_name{
+    height: 40px;
+}
+.reg_form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-style: italic;
+    font-size: 1.5vh;
+    font-weight: 800;
+    border: 1px solid #ddd;
+    color: #000000;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 5vh;
+      width: 89%;
+      box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.3);
+      margin-left: 4%;
+  }
+  .Reg_form_container .reg_form {
+    margin-top: 1px;
+  }
+  .reg_form .gender-box {
+    margin-top: 1px;
+   
+  
+  }
+  .regster_and_close span{
+    font-size: 2vh;
+      }
+      .regster_and_close{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+  }

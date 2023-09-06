@@ -1,0 +1,264 @@
+.add_post_contianer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.add_post_input_con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 550px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 7px  10px black;
+}
+.img_post_container{
+    height: 300px;
+    width: 430px;
+    position: relative;
+  }
+  .img_post_container .post_img_wrapper{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 3%;
+    background: #fff;
+    border: 5px dashed #c2cdda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+  #brouse{
+    color: #4070f4;
+    cursor: pointer !important;
+  }
+  .post_img_wrapper.active{
+    border: none;
+  }
+  .post_img_wrapper .select_image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post_img_wrapper #display-img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+    display:block;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.19), 0 px 6px rgba(0,0,0,0.23);
+    
+  }
+
+  .post_img_wrapper #display-upimg{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display:block;
+    
+  }
+  .post_img_wrapper .file-icon{
+    font-size: 100px;
+    color: #81e678;
+    cursor: pointer !important;
+  }
+  .post_img_wrapper .file-icon i{
+    cursor: pointer !important;
+  }
+  .post_img_wrapper .show_text_below_icon{
+    font-size: 20px;
+    font-weight: 500;
+    color: #5B5B7B;
+  }
+  .Verification_input-field1 span{
+    padding: 5px;
+  }
+  .post_img_wrapper #cancel-btn i{
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+    color: #9658fe;
+    cursor: pointer;
+    display: none;
+  }
+  .post_img_wrapper.active:hover #cancel-btn i{
+    display: block;
+  }
+  .post_img_wrapper #cancel-btn i:hover{
+    color: #e74c3c;
+  }
+  .post_img_wrapper .file-name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+    color:black;
+    display: none;
+    background: linear-gradient(135deg,#1403fa 0%,#9658fe 100%);
+  }
+  .post_img_wrapper.active:hover .file-name{
+    display: block;
+  }
+  .img_post_container #custom-btn{
+    margin-top: 30px;
+    display: block;
+    width: 40%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 1%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #9658fe;
+    /*background: linear-gradient(135deg,#033372 0%,#9658fe 100%);*/
+  }
+  .Verification_input-field1{
+    position: relative;
+   
+    display: flex;
+    height: 50px;
+    margin-right: 2.5%;
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
+    
+
+}
+.Verification_input-field1 input{
+    position:relative;
+    height: 100%;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+    font-size: 16px;
+    background-color: white;
+   
+}
+.Verification_input-field1 input:focus{
+    border: 2px solid rgb(233, 31, 31);
+    background-color: rgb(240, 213, 213);
+}
+
+.Verification_input-field1 i{
+    position: absolute;
+    margin-left: -45%;
+    margin-top:4.7%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
+
+.Verification_input-field1 input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+#post-cancle-bttn-con{
+margin-top: 30px;
+width: 50%;
+margin-left: 25%;
+justify-content: space-between;
+display: flex;
+align-items: center;
+}
+#post-cancle-bttn-con span{
+font-size: 3vh;
+font-family: monospace;
+font-weight: bold;
+letter-spacing: 2px;
+}
+#post-cancle-bttn-con-space{
+  padding-right: 20px;
+}
+#upload-psat-all{
+  letter-spacing: 2px;
+}
+#cancal-post-input{
+  letter-spacing: 2px;
+}
+#posttitlediv{
+  width: 100%;
+}
+#posttitlediv input{
+  position:relative;
+  height: 40px;
+  width: 50%;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 1px 1px 5px 1px black;
+  font-size: 16px;
+  background-color: white;
+}
+#posttitlediv input:focus{
+  border: 2px solid rgb(233, 31, 31);
+    background-color: rgb(240, 213, 213);
+}
+#camp_date{
+  width: 50%;
+}
+@media (max-width: 940px) {
+.add_post_input_con{
+  width: 450px;
+}
+.img_post_container .post_img_wrapper{
+  position: relative;
+  height: 250px;
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 10px;
+  background: #fff;
+  border: 5px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.Verification_input-field1 i{
+  
+  margin-top:6.5%;
+
+}
+.Verification_input-field1 input{
+    position:relative;
+    height: 100%;
+    width: 50%;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+    font-size: 14px;
+    background-color: white;
+   
+}
+.Verification_input-field1 span{
+    padding: 5px;
+}
+}

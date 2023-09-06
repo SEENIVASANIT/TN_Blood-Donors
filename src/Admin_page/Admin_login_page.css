@@ -1,0 +1,108 @@
+ @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+ .adminlogin_info{
+    position: relative;
+    top: -5vh;
+  
+} 
+.adminlogin_info h3{
+  font-family: 'Borel', cursive;
+  padding: 0%;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+.adminlogin_info p{
+  font-family: 'Dai Banna SIL', serif;
+}
+.admin_first_page{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../assert/Admin_login_page2.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.admin_first_page h1{
+    position: relative;
+    top: 5vh;
+    font-family: 'Russo One', sans-serif;
+}
+.loginpage_admin {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  width: 90%;
+}
+.loginpage_admin .Admin_login_form .Admin_login_contan{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.Admin_login_form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 460px;
+  border-radius: 20px;
+  margin: 0 auto 100px;
+  padding: 45px;
+height: 400px;
+  float: right;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.Admin_login_form input {
+  font-family: 'Roboto Mono', monospace;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.Admin_login_form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.Admin_login_form button:hover {
+
+  background-color: #64d3cd;
+  background-image: linear-gradient(45deg,#5cbbb6,#45d380);
+  
+}
+.Admin_login_form .Adminmessage {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.Admin_login_form .Adminmessage a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+@media  (max-width:940px) {
+    .loginpage_admin {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+        
+      }
+      
+      .Admin_login_form{
+        top: 10vh;
+      
+      }
+} 

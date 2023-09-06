@@ -1,0 +1,685 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Kablammo&family=Lobster&family=Lora:ital,wght@1,600&family=PT+Serif:ital@1&family=Pacifico&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Sacramento&family=Ubuntu+Mono&family=Yellowtail&family=Ysabeau+SC&display=swap');
+
+.Admin_contianer{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    
+}
+.admin_side_bar{
+    background-color: rgb(103, 131, 131);
+    white-space: 20%;
+    height:150;
+    
+    width: 28%;
+}
+.admin_user_datas_continer{
+    margin-left: 2%;
+    width: 100%;
+    height: 100%;
+    
+}
+.user_login_continar{
+position: relative;
+top: 2vh;
+align-items: center;
+width: 99%;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+height: 70vh;
+margin-bottom: 4%;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
+.admin_post_view1{
+position: relative;
+top: 2vh;
+width: 99%;
+align-items: center;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+height: 70vh;
+margin-bottom: 4%;
+
+}
+.admin_post_view{
+position: relative;
+top: 2vh;
+width: 98%;
+align-items: center;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+margin-bottom: 0.1%;
+
+overflow-y: scroll;
+overflow-x: hidden;
+}
+.info1_contian{
+position: relative;
+top: 2vh;
+width: 99%;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+
+height:65vh;
+margin-bottom: 4%;
+align-items: center;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
+.search_hospital_dropdown{
+    width: 65%;
+}
+#dropdown_style{
+    height: 10vh;
+    font-size: 3vh;
+    color: #000;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 2vh;
+    border-radius: 20px;
+    border: 0.4px solid black;
+    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
+
+    
+}
+#blood_camp_dropdown_style{
+    height: 5vh;
+    font-size: 3vh;
+    color: #000;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 0.3vh;
+    border-radius: 20px;
+    border: 0.4px solid black;
+    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
+
+    
+}
+.dropdown_result_contian{
+    background-color: beige;
+    width: 100vh;
+    height: 50vh;
+    justify-content: space-evenly;
+    
+
+}
+.dropdown_and_donater_datas_con{
+    background-color:whitesmoke;
+    border:1px solid #000;
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.23);
+    display: flex;
+    width: 97%;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+    height: fit-content;
+    align-items: center;
+}
+.city_card11{
+    justify-content: space-around;
+    margin-top: 5vh;
+height: 28vh;
+height: auto;
+    padding: 10px;
+margin-left: 2%;
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+align-items:first baseline ;
+/* flex-wrap: wrap;
+align-items:first baseline ;
+flex-direction: row; */
+width: 100%;
+
+    
+    }
+.city_card111{
+     justify-content: space-around;
+    margin-top: 5vh;
+    padding: 10px;
+
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+align-items:first baseline ;
+/* flex-wrap: wrap;
+flex-direction: row; */
+width: 100%;
+
+    }
+    .viwe_for_admin_option{
+        margin-top: 1%;
+        width: 97%;
+        border-radius: 10px;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);   
+    }
+.all_option_position{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+   
+    font-family: 'Pacifico', cursive;
+
+    font-size: 3vh;
+} 
+.all_user_and_count_contain{
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}  
+.all_user_and_count_contain span{
+background-color: rgb(196, 196, 196);
+opacity: 0px;
+border-radius: 5px;
+padding: 5px;
+}
+#admin_lagout{
+    font-size: 3vh;
+}
+#admin_lagout:hover{
+    background-color:rgb(177, 165, 165);
+    border-radius: 20px;
+    color: black;
+}
+.blood_camps_view_continar_admin{
+    width: 95%;
+    height: 99%;
+display: flex;
+margin-top: 5vh;
+flex-direction: column;
+border: 2px solid black;
+align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
+ 
+}
+.blood_camps_view_continar_admin img{
+   padding: 10px;
+   margin-top: 1%;
+    width: 90%;
+    border-radius: 20px;
+    height: 85%;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+.blood_edit_del_info_button_admin{
+
+width: 10%;
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 90%;
+
+padding: 10px;
+justify-content: space-around;
+   
+}
+.blood_edit_del_info_button_admin span{
+    width: 15vh;
+}
+#btn_1_admin{
+    width: 100%;
+    font-size: 2vh;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+}
+.admin_show_info_contian_camps{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 140vh;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 7px  10px black;
+}
+.admin_show_info_contian_camps1{
+    width: 100%;
+border-radius: 7px;
+box-shadow: 1px 1px  15px 1px rgb(59, 58, 58);
+background-color:whitesmoke;
+    display: flex;
+}
+.admin_show_info_contian_camps1 img{
+    width: 70vh;
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    border: 1px solid black;
+padding: 4px;
+}
+
+.camp_datas_contian{
+    height: 50vh;
+    margin-left: 5vh;
+   overflow-y: scroll;
+    
+  
+    width: 100%;
+    
+}
+.admin_view_blood_other_other_info{
+    display: flex;
+    margin-top: 2vh;
+}
+.admin_view_blood_other_other_info span{
+
+align-items: center;
+justify-content: start;
+position: relative;
+display: flex;
+
+    padding: 1px;
+    width: 70%;
+
+    
+    
+    margin-top: -4px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+}
+.admin_view_blood_other_other_info p{
+    font-size: 2vh;
+   width: 20vh;
+   align-items: center;
+   display: flex;
+    position: relative;
+    font-weight: bold;
+    
+    
+}
+#view1{
+    width: 13vh; 
+}
+#view2{
+    width: 15vh;
+}
+#view3{
+    width: 11vh;
+}
+#view4{
+width: 18vh;
+
+}
+#view5{
+width: 15vh;
+}
+#camp_status{
+    overflow-y: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.close_camps_model{
+
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+}
+.close_camps_model2{
+
+    width: 100%;
+    margin-top: -5px;
+    display: flex;
+padding: 10px;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+}
+.close_camps_model2 span{
+    font-size: 2vh;
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.close_camps_model span{
+
+    font-size: 2vh;
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-weight: 800;
+    
+}
+#admin_nocomment_message{
+    color: red;
+    font-family: monospace;
+    letter-spacing: 1px;
+    margin-top: 40vh;
+    font-weight: 800;
+}
+#user_info_card span{
+   color: #4b4a4a;
+   
+font-weight: 900;
+font-family: monospace;
+   font-size: 2.5vh;
+}
+
+.user_card_view h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+#remove_user{
+    letter-spacing: 2px;
+    font-size: 2vh;
+    font-weight: 800;
+}
+.web_message_continar{
+    width: 60vh;
+    height: 13vh;
+    display: flex;
+    font-size: small;
+    flex-direction: column;
+  
+}
+#database_icon{
+    height: 50vh;
+    width: 10vh;
+}
+#web_message_datas{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: pointer;
+    align-items: center;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);   
+font-size: small;
+    border-radius: 20px;
+}
+#web_message_datas:hover{
+    box-shadow: 0 0 5px rgb(136, 134, 134),0 0 25px gray;
+}
+
+.web_datas_contian{
+    justify-content: space-around;
+    margin-top: 5vh;
+    padding: 10px;
+margin-left: 2%;
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap: 20px;
+margin-left: 15vh;
+align-items:first baseline ;
+width: 100%;   
+}
+.welcome_admin_name{
+   
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+}
+#inside_h3_admin_welcome{
+    font-family: monospace;
+font-size: 5vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+ .admin_card_view{
+    background-color: blanchedalmond;
+    width: 90%;
+    height: 75vh;
+    margin-left: 5%;
+    border-radius: 10px;
+align-items: center;
+overflow-y: scroll;
+overflow-x: hidden;
+} 
+
+ .admin_card_view2{
+    justify-content: space-around;
+    margin-top: 2vh;
+    padding: 10px;
+
+display:flex;
+flex-direction: column;
+
+gap: 5px;
+align-items:center;
+/* flex-wrap: wrap;
+flex-direction: row; */
+width: 100%;
+} 
+#single_admin_card{
+ width: 90%;
+ border-radius: 20px;
+ position: relative;
+ box-shadow: 0 0 5px rgb(136, 134, 134),0 0 15px gray;
+
+}
+#single_admin_card_img{
+ width: 30vh;
+ border-radius: 10px;
+ box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 1px 1px rgba(0,0,0,0.23);   
+height: 25vh;
+ position: relative;
+ padding: 5px;
+ margin-bottom: 4px;
+ margin-top: -2vh;
+}
+#twitter_icon{
+    
+    width: 15px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+  
+}
+
+.admin_social_medias{
+   
+    display: flex;
+    justify-content: space-evenly;
+}
+.admin_social_medias a i{
+    font-size:large;
+}
+.swal2-input{
+    overflow-x: hidden;
+    width: 80%;
+    color: #635151;
+    font-weight: bold;
+    font-size: 2vh;
+    border-radius: 10px;
+
+}
+.more_admin__p_tag{
+    color: #000;
+    font-size: 2vh;
+}
+
+#new_admin_contian{
+height: 50vh;
+overflow-y: scroll;
+justify-content: space-between;
+}
+#ww{
+    width: 15%;
+    
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+@media  (max-width:940px) {
+    
+    .viwe_for_admin_option{
+       margin-top: 2%;
+        width: 95%;
+    }
+    .all_option_position{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        font-weight: 800;
+    color: #000;
+
+    font-family: 'Pacifico', cursive;
+        font-size: 2vh;
+    }
+    #admin_lagout{
+        font-size: 2vh;
+    } 
+    #admin_lagout:hover{
+        background-color:rgb(194, 187, 187);
+        border-radius: 10px;
+        color: black;
+    }
+    
+    
+    .all_user_and_count_contain span{
+        background-color: rgb(196, 196, 196);
+        opacity: 0px;
+        border-radius: 3px;
+        padding: 2px;
+        }
+        .Admin_contianer{
+            display: flex;
+            flex-direction:column;
+        }   
+        .admin_side_bar{
+            background-color: rgb(103, 131, 131);
+           height: 30%;
+           margin-top: 3%;
+            padding: 4%;
+            
+            width: 100%;
+        }    
+        .user_login_continar{
+           display: flex;
+        
+          flex-direction: column;
+           align-items: center;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            
+            }
+            .city_card111{
+                justify-content: space-evenly;
+           
+            display:flex;
+            align-items:first baseline ;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom:4%;
+         
+          
+                }    
+                .web_datas_contian{
+                    justify-content: space-evenly;
+                
+           
+                    display:flex;
+                    align-items:first baseline ;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom:4%;
+                   
+                }
+                #dropdown_style{
+                    height: 10vh;
+                    font-size: 2vh;
+                    color: #000;
+                    font-weight: bold;
+                    font-family: monospace;
+                    margin-top: 1.5vh;
+                    border-radius: 20px;
+                    border: 0.4px solid black;
+                    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
+                
+                    
+                }     
+                #blood_camp_dropdown_style{
+                    height: 5vh;
+                    font-size: 1.6vh;
+                    color: #000;
+                    font-weight: bold;
+                    font-family: monospace;
+                    margin-top: 0.3vh;
+                    border-radius: 20px;
+                    border: 0.4px solid black;
+                    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
+                
+                    
+                } 
+        
+.admin_post_view{
+    position: relative;
+    top: 2vh;
+    width: 98%;
+    height: 89%;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+
+    flex-direction: column;
+    margin-bottom: 0.1%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }      
+    .admin_show_info_contian_camps{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        width: 75vh;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 7px  10px black;
+    }  
+    
+.camp_datas_contian{
+    height: 50vh;
+    margin-left: 1vh;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space:normal;
+    -webkit-line-clamp: 2;
+    width: 100%;
+    
+}
+.camp_datas_contian{
+    height: 50vh;
+   overflow-y: scroll;
+
+  
+    width: 100%;
+    
+}
+#admin_nocomment_message{
+    font-size: 3vh;
+}
+
+}

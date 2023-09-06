@@ -1,0 +1,33 @@
+.single_donator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.single_user{
+   padding: 10px;
+}
+.close_single_user{
+    width: 100%;
+}
+.close_single_user span{
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+.single_donator h4{
+    color: black;
+    font-weight: 900;
+    font-family: monospace;
+}

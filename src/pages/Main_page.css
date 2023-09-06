@@ -1,0 +1,232 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Borel&family=Bungee+Spice&family=Carter+One&family=Dai+Banna+SIL:ital,wght@1,300&family=Dancing+Script:wght@700&family=Kablammo&family=Lobster&family=Lora:ital,wght@1,600&family=Lumanosimo&family=Noto+Serif+JP:wght@900&family=PT+Serif:ital@1&family=Pacifico&family=Rajdhani:wght@300&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Russo+One&family=Sacramento&family=Tektur&family=Ubuntu+Mono&family=Yellowtail&family=Yeseva+One&family=Ysabeau+SC&display=swap');
+
+.img{
+    height: 30vh;
+}
+.city_card{
+    justify-content: space-around;
+    margin-top: 10vh;
+
+    display:grid;
+grid-template-columns: repeat(4,1fr);
+gap: 10px;
+margin-left: 5vh;
+align-items:first baseline ;
+width: 100%;
+
+    }
+.city_contianer{
+    width: 100%;
+    padding: 10px;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    
+}     
+ .city_bttn{
+    width: 100%;
+}
+.city_bttn span{
+    font-size: 2vh;
+    font-family: monospace;
+font-weight: bold;
+}
+.card_bar{
+    color: black;
+}
+.result_tag{
+    display: none;
+    text-align: center;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+} 
+
+.header1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(360deg,rgba(0,0,0,0.9),transparent),url('http://il6.picdn.net/shutterstock/videos/5915768/thumb/1.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    }
+.header2{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(360deg,rgba(0,0,0,0.9),transparent),url('https://media.npr.org/assets/img/2015/12/21/blood-donation_wide-61f7f7edb448b248a1a40d8de4f50aa7130a1490.jpg?s=1400');
+    background-size: cover;
+    background-position: center center;
+}
+.header3{
+    width: 100%;
+    height: 100vh;
+    background-image:url("https://www.sriramakrishnahospital.com/wp-content/uploads/2021/06/Blood-Donation-1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.header h4{
+    font-size: 6vh;
+}
+    .header-text{
+       
+    height: 100%;
+    display: flex;
+ font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    } 
+    .content_1 h1{
+    font-size: 60px;    
+    }
+    .content_1 ul li{
+text-align: left; 
+    }
+    .content_1 a:hover{
+        text-decoration: none;
+        color:wheat;
+    }
+    .content_1 h1{
+        font-family: 'IBM Plex Mono', monospace;
+        
+    }
+    .content_1 ul li{
+        font-size: 3vh;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+    .content_1 h4{
+        font-family: 'Jost', sans-serif;
+    }
+    .content_1 p{ 
+    margin:0px; 
+    font-size: 30px;
+    white-space:nowrap;
+    font-family: 'Ysabeau SC', sans-serif;
+    overflow:hidden;
+    animation:typing 4s steps(22,end) forwards,
+            blink 1s infinite alternate;
+    } 
+    .start_btn{
+    text-decoration: none;
+    padding: 15px 35px;
+    margin-left: -120vh;
+    margin-top: 20vh;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    background: deepskyblue;
+    display: inline-block;
+    }
+    .start_btn:hover{
+background-color: rgb(63, 104, 117);
+    } 
+    .start_btn:visited{
+        text-decoration: none;
+    }
+    
+ .header3 img{
+    display: none;
+}
+.header1 img{
+    display: none;
+}
+.header2 img{
+    display: none;
+} 
+.search_container1{
+    margin-top: 5vh;
+
+}
+@media (max-width:940px) {
+    .header2{
+        background-size: 500px 800px;
+
+    }
+    .header3{
+        
+        background-size: 500px 800px;
+        
+    }
+    .header1{
+        
+        background-size: 500px 800px;
+        
+    }
+    /* .header3{
+        background-image: none;
+        position: relative;
+    }
+    .header3 img{
+        display: block;    
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+    .header-text{
+       position: absolute;
+     font-weight: bolder;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        }
+    .header1{
+        background-image: none;
+        position: relative;
+    }
+    .header1 img{
+        display: block;    
+        background-image: linear-gradient(360deg,rgba(0,0,0,0.9),transparent),url("http://il6.picdn.net/shutterstock/videos/5915768/thumb/1.jpg");
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+    .header2{
+        background-image: none;
+        position: relative;
+    }
+    .header2 img{
+        display: block;    
+        background-image: linear-gradient(360deg,rgba(0,0,0,0.9),transparent),url("http://il6.picdn.net/shutterstock/videos/5915768/thumb/1.jpg");
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    } */
+    .start_btn{
+        position: relative;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-bottom: -10px;
+        margin-top: 15vh;
+       margin-left: -48vh;
+        border-radius: 5px;
+        width: 20vh;
+        color: #fff;
+        font-size: 12px;
+        cursor: pointer;
+        background: deepskyblue;
+        
+        }
+    
+        .start_btn:hover{
+    background-color: rgb(63, 104, 117);
+        }
+        
+    .city_card{
+        justify-content: space-evenly;
+                
+           
+            display:flex;
+justify-content: center;
+            align-items: center;
+          
+            flex-direction: column;
+            width: 100%;
+            margin-bottom:4%;
+         
+        } 
+  }

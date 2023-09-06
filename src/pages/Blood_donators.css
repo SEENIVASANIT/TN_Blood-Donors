@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Ubuntu+Mono&family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=PT+Serif:ital@1&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Sacramento&family=Ubuntu+Mono&family=Yellowtail&family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Ubuntu+Mono&family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Ubuntu+Mono&family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Ubuntu+Mono&family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Ubuntu+Mono&family=Ysabeau+SC&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=PT+Serif:ital@1&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Ubuntu+Mono&family=Yellowtail&family=Ysabeau+SC&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Borel&family=Bungee+Spice&family=Carter+One&family=Kablammo&family=Lobster&family=Lora:ital,wght@1,600&family=Lumanosimo&family=Noto+Serif+JP:wght@900&family=PT+Serif:ital@1&family=Pacifico&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Russo+One&family=Sacramento&family=Ubuntu+Mono&family=Yellowtail&family=Yeseva+One&family=Ysabeau+SC&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Lora:ital,wght@1,600&family=PT+Serif:ital@1&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Sacramento&family=Ubuntu+Mono&family=Yellowtail&family=Ysabeau+SC&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Kablammo&family=Lobster&family=Lora:ital,wght@1,600&family=Lumanosimo&family=Noto+Serif+JP:wght@900&family=PT+Serif:ital@1&family=Pacifico&family=Rajdhani:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Sacramento&family=Ubuntu+Mono&family=Yellowtail&family=Yeseva+One&family=Ysabeau+SC&display=swap');
+
+.hos_datas{
+    position:relative;
+    width: 100%;
+    margin-top: 20vh;
+}
+.navigation-menu__labels ul li{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    font-size:3vh;
+    width: 100%;
+    margin-top: 1vh;
+color: white;
+letter-spacing: 2px;
+font-family: 'Carter One', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ysabeau SC', sans-serif;
+font-weight: 600;
+    align-items: center;
+    justify-content: space-between;  
+}
+#add_donater:hover{
+    background-color: #77c0ee;
+    box-shadow: none;
+}
+.navigation-menu__labels h2{
+    font-family: 'Carter One', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ysabeau SC', sans-serif;
+}
+.navigation-menu__labels ul li:hover{
+    background-color: aliceblue;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 500;
+   transition: 200ms;
+    
+}
+.navigation-menu__labels ul li span{
+   font-size: 2.5vh;
+   font-family: monospace;
+
+   letter-spacing: 1px;
+    
+}
+
+.hos_data_con{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.donator_card{
+justify-content: space-around;
+margin-top: 1vh;
+display:grid;
+grid-template-columns: repeat(4,1fr);
+gap: 15px;
+margin-left: 5vh;
+align-items:first baseline;
+justify-content: center;
+
+width: 100%;
+}
+.hos_data_in_con{
+    width: 95%;
+    height: 67vh;
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.23);
+    background-color:#f5f5f5ea;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 25px;    
+}
+
+.hos_data_con img{
+    width: 40%;
+    height: 60vh;
+    margin-left: 10vh;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 25px;
+    
+}
+.data_con{
+    width: 100%;
+    height: 60vh;
+    margin-left: 2vh;
+    margin-right: 3vh;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space:normal;
+    -webkit-line-clamp: 3;
+}
+.hos_data_display{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+    overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      justify-content: space-between !important;
+}
+.hos_data_display span{
+    color: black;
+    display: flex;
+    font-family:sans-serif;
+    flex-direction: row;
+    padding: 7px;
+    margin-top: 1.6vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight:600;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 5vh;  
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+
+}
+.hos_data_display span h3{
+    margin-top: 2vh;
+    margin-left: 1vh;
+    font-family: 'Carter One', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ysabeau SC', sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+.hos_addresss{
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-right:20vh;
+    width: 100%;
+    align-items:start;
+    justify-content: flex-start;
+    text-align: start;
+    white-space:normal;
+    -webkit-line-clamp: 2;
+}
+.hos_call_vist_bttn{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+align-items: end;
+width: 95%;
+margin-top: 2vh;
+padding: 10px;
+
+}
+.hos_call_vist_bttn span{
+    font-size: 3vh;
+    font-family: monospace;
+}
+.hos_call{
+    margin-right: 4vh;
+    
+}
+.visit{
+    text-decoration: none;
+    color: #000;
+}
+.visit:hover{
+    text-decoration: none;
+    color: #000;
+}
+#tow_info_bttn{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.menu_con{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.23);
+    margin-top:10vh;
+}
+.display_more_option{
+ 
+
+display: none;
+    width: 201vh;
+    height: 25vh;
+    
+}
+.more_option_blood{
+    width: 25vh;
+    height: 25vh;
+    background-color:whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    overflow-y: scroll;
+    box-shadow: 0 0 3px rgb(136, 134, 134),0 0 15px gray;
+    margin-bottom: 3vh;
+}
+.more_option_blood p{
+    font-size: 4vh;
+    cursor: pointer;
+    font-weight: 800;
+    color: #000;
+    padding: 0px;
+    font-family: monospace;
+}
+.more_option_blood p:hover{
+color: #494747;
+}
+.more_blood_group{
+    height: 30vh;
+    width: 100%;
+    position:relative;
+    margin-right: 10vh;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+   
+}
+.menu_items{
+    margin-right: 0.3%;
+        padding: 15px;
+        
+        font-size: 3vh;
+        font-weight: 900;
+        color: #000;
+    box-shadow: 5px 0 5px 0px rgba(0,0,0,0.23);
+}
+#clik_more_option_lable{
+    margin-bottom: -0.1vh;
+
+   
+}
+
+.check_box_for_more_option_visible[type=checkbox]:checked ~ .display_more_option{
+display: block;
+}
+
+.center_menu{
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  display: flex;
+  flex-direction: column;
+    position: relative;
+}
+.input_div{
+    padding: 10px;
+    color: #000;
+    font-weight: 900;
+    display: flex;
+ 
+    flex-direction: column;
+}
+.input_div2{
+    padding: 1px;
+    color: #000;
+    font-weight: 900;
+    display: flex;
+ 
+    flex-direction: column;
+}
+
+
+
+.All_blood{
+    height: 9.5vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 9vh;
+    
+}
+.show_all_donator_con{
+    width: 95%;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-top: 3%;
+    position:relative;
+    margin-left: 3%;
+    background-color:whitesmoke;
+
+}
+.corsur_blank{
+    cursor:not-allowed;
+}
+.donator_img{
+    height: 20vh;
+}
+#donator_name{
+    color: #000;
+}
+#Donator_blood{
+    color: red;
+    font-size: 5vh;
+}
+.donator_address{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space:normal;
+    -webkit-line-clamp: 2;
+    
+}
+#donator_info{
+    color:gray;
+    font-size: 2vh;
+    margin-left: 1vh;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space:normal;
+    -webkit-line-clamp: 2;
+}
+.Avaliable_status{
+    width: 31vh;
+    margin-left: 1vh;
+
+    position: relative;
+    display: flex;
+    justify-content: flex;
+ 
+}
+.Avaliable_status2{
+    width: 25vh;
+    margin-left: 1vh;
+
+    position: relative;
+    display: flex;
+    justify-content: flex;
+ 
+}
+.Avaliable_status .check_box_donar_status{
+   align-items: center;
+   width: 100%;
+    
+    display: flex;
+    justify-content: end;
+    
+}
+.Avaliable_status2 .check_box_donar_status{
+   align-items: center;
+   width: 100%;
+    
+    display: flex;
+    justify-content: end;
+    
+}
+.Avaliable_status p{
+    font-size: 2.5vh;
+    font-weight: bolder;
+    color: green;
+    margin-left: 3vh;
+  
+}
+.Avaliable_status2 p{
+    font-size: 2vh;
+    font-weight: bolder;
+    color: green;
+    
+  
+}
+#Donator_blood span{
+    color: #000;
+    padding: 5px;
+}
+
+.own_account{
+    padding: 4px;
+    font-size: large;
+    
+}
+.message_con{
+    height: 30px;
+   
+}
+.dropdown_for_blood_options{
+    display: none;
+}
+.user_message_for_info{
+    width: 100%;
+    position: relative;
+    
+    margin-top: 15vh;
+  
+}
+.user_message_for_info h2{
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 8vh;
+   
+}
+.user_message_for_info p{
+    font-family: 'Space Grotesk', sans-serif;
+font-size: 4vh;
+letter-spacing: 1.4px;
+}
+.site_logo_div p{
+    display: flex;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 3vh;
+   
+    font-weight: bold;
+    
+}
+
+.site_logo_div span{
+    font-size: 5vh;
+    font-family: 'Bungee Spice', cursive;
+    display: flex;
+    width: 50vh;
+    font-weight: 700;
+    letter-spacing: 1px;
+    height: 6vh;
+  margin-top: 2vh;
+    align-items: end;
+}
+.site_logo_div{
+    display: flex;
+    cursor: pointer;
+    margin-left: 2vh;
+    justify-content: flex-start;
+    float:inline-start;
+
+}
+@media  (max-width:940px) {
+ 
+    .hos_data_in_con{
+display: flex;
+flex-direction: column;
+position: relative;
+top: 5vh;
+
+border-radius: 10px;
+
+height: 70vh;
+
+
+    }
+    .site_logo_div p{
+        display: flex;
+        font-family: 'Bungee Spice', cursive;
+        font-size: 2vh;
+       
+        font-weight: bold;
+        
+    }
+    
+    .site_logo_div span{
+        font-size: 3vh;
+        font-family: 'Bungee Spice', cursive;
+        display: flex;
+        width: 30vh;
+        font-weight: 700;
+        letter-spacing: 1px;
+   
+        height: 5vh;
+      margin-top:-2px;
+        align-items: end;
+    }
+    .hos_data_con img{
+        width: 90%;
+        margin-left: -1vh;
+        margin-top: 3vh;
+        height: 20vh;
+        
+    }
+    .navigation-menu__labels ul li span{
+        font-size: 1.5vh;
+        padding: 0px;
+        font-family: monospace;
+        
+        letter-spacing: 1px;
+         
+     }
+     .navigation-menu__labels ul li:hover{
+        background-color: #77c0ee;
+        box-shadow: none;
+        color: #000;
+padding: none;
+        
+        padding: 0px;
+        font-weight: 0;
+       
+        
+    }
+    .hos_data_display span{
+        color: black;
+        display: flex;
+        position: relative;
+        font-family:sans-serif;
+        flex-direction: row;
+        margin-top: 1vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight:900;
+        font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ysabeau SC', sans-serif;
+        font-size: 2vh;  
+        display: -webkit-box;
+        margin-left: 1vh;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+    
+    }
+    .hos_data_display{
+
+        width: 90%;
+        margin-left: 5%;
+    }
+    .hos_data_display span h3{
+        margin-top: 0vh;
+        font-size: 3vh;
+        margin-left: 1vh;
+        font-family: 'Carter One', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Ysabeau SC', sans-serif;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 4;
+    }
+    .hos_call_vist_bttn{
+        display: flex;
+        justify-content: end;
+        text-align: end;
+    align-items: end;
+    width: 95%;
+    margin-top: 2vh;
+    padding: 10px;
+    
+    }
+        .menu_con{
+        display: none;
+    }
+    .menu_item{
+        margin-top: 10vh;
+    }
+   
+    .navigation-menu__labels ul li{
+        display: flex;
+        padding: 15px;
+        
+ letter-spacing: 0px;
+        font-size: 2vh;
+        justify-content: space-evenly;
+        margin-bottom: 8vh;
+        margin-left: -4vh;
+        
+    }
+    
+    .donator_card{
+        justify-content: space-evenly;
+                
+           
+            display:flex;
+justify-content: center;
+            align-items: center;
+          
+            flex-direction: column;
+            width: 100%;
+            margin-bottom:4%;
+       
+        }
+        .response_view_blood_option{
+          
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 5vh;
+            width: 100%;
+        
+        }
+        .dropdown_for_blood_options{
+            display: block;
+            position: relative;
+width: 82%;
+        }
+        #blood_deopdown_style{
+            height: 10vh;
+                    font-size: 3vh;
+                    color: #000;
+                    font-weight: bold;
+                    font-family: monospace;
+                    margin-top: 0.3vh;
+                    border-radius: 20px;
+                    border: 0.4px solid black;
+                    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
+                
+        }
+    
+        .user_message_for_info h2{
+            font-family: 'Ysabeau SC', sans-serif;
+            font-size: 7vh;
+           
+        }
+        .user_message_for_info p{
+            font-family: 'Space Grotesk', sans-serif;
+        font-size: 4vh;
+        letter-spacing: 0.7px;
+        }
+}
