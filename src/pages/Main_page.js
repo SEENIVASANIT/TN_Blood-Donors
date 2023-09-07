@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Card, Image, Button, Grid } from "semantic-ui-react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Carousel } from "react-bootstrap"; // If using Bootstrap carousel, otherwise import your preferred carousel library
 import swal from "sweetalert2";
 import "../pages/Main_page.css";
@@ -12,7 +12,8 @@ const Main_page = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    fetch("https://sheetdb.io/api/v1/31wbs450fjjw9")
+    //fetch("https://sheetdb.io/api/v1/31wbs450fjjw9")
+    fetch("https://sheetdb.io/api/v1/ysvvwjqxzokrq")
       .then((response) => response.json())
       .then((data) => setRecords(data))
       .catch((err) =>
@@ -34,8 +35,8 @@ const Main_page = () => {
     ///THIS IS A SEARCH VALUE FUNCTION
     var search1 = searc;
     if (search1 === "") {
-      //fetch("https://sheetdb.io/api/v1/bsp043atzmrsd")
-      fetch("https://sheetdb.io/api/v1/31wbs450fjjw9")
+      //fetch("https://sheetdb.io/api/v1/31wbs450fjjw9")
+      fetch("https://sheetdb.io/api/v1/ysvvwjqxzokrq")
         .then((response) => response.json())
         .then((data) => setRecords(data))
         .catch((err) =>
@@ -48,11 +49,6 @@ const Main_page = () => {
         bolg.d_name.toLowerCase().includes(search1.toLowerCase())
       )
     );
-    // if (records.length == records.length) {
-    //   setTimeout(
-    //     (document.getElementById("result_tag").style.display = "block")
-    //   );
-    // }
   };
 
   return (
