@@ -1,23 +1,18 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import Oplus from "../assert/Oplus.jpg";
 import woman from "../assert/woman.jpg";
 import man from "../assert/men.png";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import "../Admin_page/Admin.css";
 import {
   Menu,
-  Segment,
   Card,
   Button,
   Image,
   Grid,
   Message,
-  Modal,
-  Header,
   Feed,
   Dropdown,
-  Icon,
 } from "semantic-ui-react";
 import {
   addDoc,
@@ -25,11 +20,8 @@ import {
   getDocs,
   doc,
   serverTimestamp,
-  updateDoc,
   deleteDoc,
-  where,
   orderBy,
-  limitToLast,
   query,
 } from "firebase/firestore";
 import { storage } from "../firebase";
@@ -67,17 +59,17 @@ const Admin = () => {
     orderBy("timstamp")
   );
   useEffect(() => {
-    fetch(`https://sheetdb.io/api/v1/fay54ry1j1nbk`)
+    fetch(`https://sheetdb.io/api/v1/wunjevf2jrqy4`)
       .then((response) => response.json())
       .then((data) => setRecords(data))
       .catch((err) =>
-        swal.fire("Oops!", "Some network error so tryagain!!!", "error")
+        swal.fire("Oops!", "Some network error so try again!!!", "error")
       );
-    fetch(`https://sheetdb.io/api/v1/31wbs450fjjw9`)
+    fetch(`https://sheetdb.io/api/v1/ysvvwjqxzokrq`)
       .then((response) => response.json())
       .then((data) => setDistric_list(data))
       .catch((err) =>
-        swal.fire("Oops!", "Some network error so tryagain!!!", "error")
+        swal.fire("Oops!", "Some network error so try again!!!", "error")
       );
     get_All_Admins();
     get_All_user();
@@ -425,20 +417,7 @@ const Admin = () => {
             <p>
               T<p>N</p>
             </p>
-            <span>
-              Bloo
-              {/* <span id="ww">
-                <i
-                  class="fa-solid fa-droplet"
-                  style={{ color: "red", fontSize: "4vh" }}
-                ></i>
-                <i
-                  class="fa-solid fa-droplet"
-                  style={{ color: "red", fontSize: "4vh" }}
-                ></i>
-              </span> */}
-              d Donors
-            </span>
+            <span>Bloo d Donors</span>
           </div>
           <h1
             style={{
@@ -878,33 +857,45 @@ const Admin = () => {
                   hidden
                 ></a>
                 <a
-                  href="https://console.firebase.google.com/project/blood-donars-594f5/firestore/data/~2FMM%20Multi%20Speciality%20Hospital1~2FMdGiWTISMLZ4ytON6K3u"
+                  href="https://app.netlify.com/teams/blooddonation335/overview"
                   target="_blank"
-                  id="visite_hospital_data"
+                  id="netlify"
                   hidden
                 ></a>
                 <a
-                  href="https://console.firebase.google.com/project/blood-donars-594f5/firestore/data/~2FMM%20Multi%20Speciality%20Hospital1~2FMdGiWTISMLZ4ytON6K3u"
+                  href="https://sheetdb.io/app/apis?search=&sortField=created_at&sortDirection=desc"
                   target="_blank"
-                  id="visite_firebase"
+                  id="sheetdb"
                   hidden
                 ></a>
                 <a
-                  href="https://console.firebase.google.com/project/blood-donars-594f5/firestore/data/~2FMM%20Multi%20Speciality%20Hospital1~2FMdGiWTISMLZ4ytON6K3u"
+                  href="https://docs.google.com/spreadsheets/d/1seWuyCHOrXciBUzXupF1S8We6BXAC-P0WRKaOfeMCQY/edit#gid=0"
                   target="_blank"
-                  id="visite_firebase"
+                  id="Hospital_API"
                   hidden
                 ></a>
                 <a
-                  href="https://console.firebase.google.com/project/blood-donars-594f5/firestore/data/~2FMM%20Multi%20Speciality%20Hospital1~2FMdGiWTISMLZ4ytON6K3u"
+                  href="https://docs.google.com/spreadsheets/d/1kknJ5ZAQ8EWrOO-N1Bmj8aMXob8h4NHXzREP55ISRcM/edit#gid=0"
                   target="_blank"
-                  id="visite_firebase"
+                  id="District_API"
                   hidden
                 ></a>
                 <a
-                  href="https://console.firebase.google.com/project/blood-donars-594f5/firestore/data/~2FMM%20Multi%20Speciality%20Hospital1~2FMdGiWTISMLZ4ytON6K3u"
+                  href="https://github.com/SEENIVASANIT/TN_Blood-Donors"
                   target="_blank"
-                  id="visite_firebase"
+                  id="github"
+                  hidden
+                ></a>
+                <a
+                  href="https://console.firebase.google.com/project/blood-donars-594f5/firestore/data/~2FBlood_donator_login"
+                  target="_blank"
+                  id="user"
+                  hidden
+                ></a>
+                <a
+                  href="https://dashboard.emailjs.com/admin/templates"
+                  target="_blank"
+                  id="emailjs"
                   hidden
                 ></a>
                 <div className="web_datas_contian">
@@ -916,16 +907,16 @@ const Admin = () => {
                       onClick={() =>
                         document.getElementById("visite_firebase").click()
                       }
-                      content="For storing donor credentials and their posts"
+                      content="For storing donor credentials and their posts."
                     />
                   </div>
                   <div className="web_message_continar">
                     <Message
                       id="web_message_datas"
                       icon="hospital outline"
-                      header="Google sheet API"
+                      header="Hospitals API"
                       onClick={() =>
-                        document.getElementById("visite_hospital_data").click()
+                        document.getElementById("Hospital_API").click()
                       }
                       content="Used to store more hospitals."
                     />
@@ -934,11 +925,11 @@ const Admin = () => {
                     <Message
                       id="web_message_datas"
                       icon="tag"
-                      header="Google sheet district API"
+                      header="District API"
                       onClick={() =>
-                        document.getElementById("visite_firebase").click()
+                        document.getElementById("District_API").click()
                       }
-                      content="Used for storing the disctricts within tamilnadu"
+                      content="Used for storing the disctricts within tamilnadu."
                     />
                   </div>
                   <div className="web_message_continar">
@@ -946,9 +937,7 @@ const Admin = () => {
                       id="web_message_datas"
                       icon="github"
                       header="GitHub for colloboration"
-                      onClick={() =>
-                        document.getElementById("visite_firebase").click()
-                      }
+                      onClick={() => document.getElementById("github").click()}
                       content="Version control system for our project"
                     />
                   </div>
@@ -957,32 +946,26 @@ const Admin = () => {
                       id="web_message_datas"
                       icon="users"
                       header="Firebase Databse for Users"
-                      onClick={() =>
-                        document.getElementById("visite_firebase").click()
-                      }
-                      content="For storing user credentials"
+                      onClick={() => document.getElementById("user").click()}
+                      content="For storing user credentials."
                     />
                   </div>
                   <div className="web_message_continar">
                     <Message
                       id="web_message_datas"
                       icon="server"
-                      header="Render.com"
-                      onClick={() =>
-                        document.getElementById("visite_firebase").click()
-                      }
-                      content="We use this platform for deploying our website"
+                      header="Netlify.com"
+                      onClick={() => document.getElementById("netlify").click()}
+                      content="We use this platform for deploying our website."
                     />
                   </div>
                   <div className="web_message_continar">
                     <Message
                       id="web_message_datas"
                       icon="mail outline"
-                      header="Emailjs Middleware"
-                      onClick={() =>
-                        document.getElementById("visite_firebase").click()
-                      }
-                      content="We used this middleware to make automation in mail sending to the donors"
+                      header="Emailjs Mail Automation"
+                      onClick={() => document.getElementById("emailjs").click()}
+                      content="We used this middleware to make automation in mail sending to the donors."
                     />
                   </div>
                   <div className="web_message_continar">
@@ -991,9 +974,7 @@ const Admin = () => {
                       icon="grid layout"
                       header="SheetDB"
                       content="For converting the google sheets into JSON format."
-                      onClick={() =>
-                        document.getElementById("visite_firebase").click()
-                      }
+                      onClick={() => document.getElementById("sheetdb").click()}
                     />
                   </div>
                 </div>
