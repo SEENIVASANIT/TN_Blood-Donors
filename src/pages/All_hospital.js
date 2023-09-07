@@ -14,27 +14,25 @@ const All_hospital = () => {
   const [open2, setOpen2] = useState(false);
   const get_hospital_name = location.state.dis_name;
   useEffect(() => {
+    //fetch(
+    //`https://sheetdb.io/api/v1/fay54ry1j1nbk/search?District=${get_hospital_name}`
+    // )
     fetch(
-      `https://sheetdb.io/api/v1/fay54ry1j1nbk/search?District=${get_hospital_name}`
+      `https://sheetdb.io/api/v1/wunjevf2jrqy4/search?District=${get_hospital_name}`
     )
       .then((response) => response.json())
       .then((data) => setHospital_records(data))
       .catch((err) =>
         swal.fire("Oops!", "Some network error so try again!!!", "error")
       );
-    // setHospital_records(
-    //   hospital_records.filter((fil) => {
-    //     fil.District.toLowerCase().includes(get_hospital_name.toLowerCase());
-    //   })
-    // );
   }, []);
   const Search_fun = async (e, searc) => {
     ///THIS IS A SEARCH VALUE FUNCTION
     var search1 = searc;
     if (search1 === "") {
+      //fetch(`https://sheetdb.io/api/v1/fay54ry1j1nbk/search?District=${get_hospital_name}`)
       fetch(
-        `https://sheetdb.io/api/v1/fay54ry1j1nbk/search?District=${get_hospital_name}`
-        //`https://sheetdb.io/api/v1/0kdraxby8lpny/search?District=${get_hospital_name}`
+        `https://sheetdb.io/api/v1/wunjevf2jrqy4/search?District=${get_hospital_name}`
       )
         .then((response) => response.json())
         .then((data) => setHospital_records(data))
